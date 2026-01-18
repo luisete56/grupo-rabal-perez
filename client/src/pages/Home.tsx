@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowDown, Building2, Globe, Layers } from "lucide-react";
 import { motion } from "framer-motion";
 import heroBackground from "@assets/image_1768755699510.png";
-import founderImage from "@assets/generated_images/young_spanish_professional_portrait.png";
+import founderImage from "@assets/image_1768758051076.png";
 
 export default function Home() {
   const { data: companies, isLoading } = useCompanies();
