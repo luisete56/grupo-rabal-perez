@@ -4,7 +4,7 @@ import { StructureDiagram } from "@/components/StructureDiagram";
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Building2, Globe, Layers } from "lucide-react";
 import { motion } from "framer-motion";
-import heroBackground from "@assets/image_1768755494951.png";
+import heroBackground from "@assets/image_1768755699510.png";
 
 export default function Home() {
   const { data: companies, isLoading } = useCompanies();
