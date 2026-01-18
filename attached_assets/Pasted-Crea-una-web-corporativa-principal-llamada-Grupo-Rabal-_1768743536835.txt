@@ -1,0 +1,214 @@
+Crea una web corporativa principal llamada “Grupo Rabal Pérez”.
+
+OBJETIVO DE LA WEB
+
+Esta web representa a Grupo Rabal Pérez, el grupo empresarial que agrupa todas las creaciones, proyectos y empresas fundadas por Luis Rabal Pérez.
+
+Su función es:
+
+Explicar la estructura del grupo
+
+Presentar cada empresa de forma independiente
+
+Mostrar que cada empresa tiene su propio propósito
+
+Redirigir a los usuarios a las webs individuales de cada empresa
+
+Esta web NO vende servicios directamente.
+Es una web de presentación institucional.
+
+MENSAJE CLAVE DEL GRUPO
+
+Grupo Rabal Pérez es un ecosistema de empresas que trabajan en:
+
+Automatización
+
+Digitalización de sectores tradicionales
+
+Nuevas formas de interacción entre personas, empresas y tecnología
+
+Creatividad, formación y exploración social
+
+Todas las empresas pertenecen al grupo, pero cada una opera de forma independiente.
+
+ESTRUCTURA DE LA WEB
+1. HERO / PORTADA
+
+Título principal
+
+Grupo Rabal Pérez
+
+Subtítulo
+
+Grupo empresarial creado por Luis Rabal Pérez que reúne proyectos tecnológicos, creativos y sociales orientados al futuro.
+
+Texto breve
+
+Todas las empresas, plataformas y proyectos desarrollados por Luis Rabal Pérez forman parte de un mismo grupo, pero cada uno aborda un problema distinto desde una empresa especializada.
+
+Botón:
+
+“Explorar empresas”
+
+2. SECCIÓN — EL GRUPO
+
+Explicar claramente que:
+
+Grupo Rabal Pérez es la empresa matriz
+
+Todas las creaciones pertenecen a Luis Rabal Pérez
+
+El grupo agrupa empresas activas y proyectos experimentales
+
+Cada empresa tiene:
+
+Su propia web
+
+Su propio producto
+
+Su propio público
+
+3. SECCIÓN — EMPRESAS DEL GRUPO
+
+Crear una tarjeta / bloque por empresa, todas con el mismo formato:
+
+PALMERAS
+
+Sector: Comercio / Marketplaces
+
+Descripción:
+Palmeras es una empresa centrada en la creación de marketplaces digitales para tiendas de muebles.
+Su objetivo es ayudar a las tiendas físicas a vender online de forma moderna, estructurada y escalable.
+
+Entre sus servicios se incluyen:
+
+Creación de marketplaces propios para tiendas de muebles
+
+Digitalización de catálogos y stock
+
+Integraciones tecnológicas avanzadas (incluyendo acceso desde asistentes de IA como ChatGPT, como parte del servicio)
+
+👉 Botón: Visitar Palmeras
+
+GAVIOTAS
+
+Sector: Restauración / Digitalización
+
+Descripción:
+Gaviotas es una empresa especializada en la digitalización de restaurantes.
+
+Se centra en:
+
+Sistemas de pedidos sin camarero (tipo McDonald’s)
+
+Pedidos desde pantallas, móvil o QR
+
+Optimización operativa de restaurantes
+
+Algunos de sus servicios incluyen:
+
+Sistemas de pedidos digitales
+
+Automatización de procesos
+
+Integraciones tecnológicas avanzadas (incluyendo acceso desde asistentes de IA como ChatGPT, como parte del servicio)
+
+👉 Botón: Visitar Gaviotas
+
+LMS AUTOMÁTICO
+
+Sector: Formación empresarial
+
+Descripción:
+LMS Automático es una plataforma de formación para empresas que combina:
+
+Vídeos formativos
+
+Inteligencia artificial
+
+Evaluaciones y seguimiento del rendimiento
+
+Está pensada para formar trabajadores de manera continua, medible y automatizada.
+
+👉 Botón: Visitar LMS Automático
+
+CALMA
+
+Sector: Creatividad / Audiovisual / Videojuegos
+
+Descripción:
+Calma es una productora creativa dedicada a:
+
+Cortometrajes
+
+Proyectos audiovisuales
+
+Videojuegos
+
+Encargos personalizados y proyectos culturales
+
+👉 Botón: Visitar Calma
+
+ULTIMATE HORROR SURVIVAL
+
+Sector: Plataforma social / experimental
+
+Descripción:
+Ultimate Horror Survival es una plataforma experimental que explora:
+
+El impacto de la IA en la sociedad
+
+El futuro del trabajo
+
+Nuevos sistemas sociales
+
+Funciona como un espacio de ideas, problemas y soluciones en evolución constante.
+
+👉 Botón: Visitar Ultimate Horror Survival
+
+4. SECCIÓN — ESTRUCTURA DEL GRUPO
+
+Explicar visualmente que:
+
+Grupo Rabal Pérez es la matriz
+
+Palmeras, Gaviotas, LMS Automático, Calma y Ultimate Horror Survival dependen del grupo
+
+Cada empresa tiene su propia web y producto
+
+5. FOOTER
+
+Texto:
+
+Grupo Rabal Pérez — Todas las creaciones de Luis Rabal Pérez
+
+Enlaces:
+
+Palmeras
+
+Gaviotas
+
+LMS Automático
+
+Calma
+
+Ultimate Horror Survival
+
+REQUISITOS TÉCNICOS
+
+Web app sencilla
+
+Diseño limpio, profesional e institucional
+
+Navegación clara
+
+Código simple
+
+Pocas carpetas
+
+Decidir tú la estructura técnica
+
+No hacer dashboards ni paneles internos
+
+No hagas preguntas.
+Genera directamente la web.
