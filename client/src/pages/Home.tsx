@@ -47,7 +47,7 @@ export default function Home() {
             </h1>
             
             <p className="text-lg md:text-xl text-white/80 max-w-3xl leading-relaxed">
-              Soy una persona del Mediterráneo que, con la ayuda de la inteligencia artificial, ayudo a crear servicios más baratos y accesibles.
+              Grupo Rabal Pérez es una empresa del Mediterráneo que, gracias a la inteligencia artificial, democratiza servicios que antes solo estaban al alcance de compañías con grandes presupuestos.
             </p>
 
             <div className="flex flex-wrap gap-4 pt-4">
