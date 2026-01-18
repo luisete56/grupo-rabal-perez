@@ -33,7 +33,7 @@ async function seedDatabase() {
         "Digitalización de catálogos y stock",
         "Integraciones tecnológicas avanzadas"
       ],
-      url: "#",
+      url: "https://palmeras-tienda-online--luigirabal.replit.app/",
       ctaText: "Visitar Palmeras"
     },
     {
@@ -45,7 +45,7 @@ async function seedDatabase() {
         "Automatización de procesos",
         "Integraciones tecnológicas avanzadas"
       ],
-      url: "#",
+      url: "https://firebrick-seahorse-545517.hostingersite.com/",
       ctaText: "Visitar Gaviotas"
     },
     {
@@ -57,7 +57,7 @@ async function seedDatabase() {
         "Evaluaciones con IA",
         "Seguimiento del rendimiento"
       ],
-      url: "#",
+      url: "https://elegant-web-app--luigirabal.replit.app/",
       ctaText: "Visitar LMS Automático"
     },
     {
@@ -70,7 +70,7 @@ async function seedDatabase() {
         "Videojuegos",
         "Encargos personalizados y proyectos culturales"
       ],
-      url: "#",
+      url: "https://calmaproducciones.eu/",
       ctaText: "Visitar Calma"
     },
     {
@@ -81,7 +81,7 @@ async function seedDatabase() {
         "Espacio de ideas",
         "Problemas y soluciones en evolución constante"
       ],
-      url: "#",
+      url: "https://web-studio--luigirabal.replit.app/",
       ctaText: "Visitar Ultimate Horror Survival"
     }
   ];
