@@ -4,6 +4,7 @@ import { StructureDiagram } from "@/components/StructureDiagram";
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Building2, Globe, Layers } from "lucide-react";
 import { motion } from "framer-motion";
+import heroBackground from "@assets/image_1768755494951.png";
 
 export default function Home() {
   const { data: companies, isLoading } = useCompanies();
@@ -18,15 +19,14 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background selection:bg-primary/10 selection:text-primary">
       {/* 1. HERO SECTION - Full width horizontal layout */}
-      <section className="relative min-h-screen flex items-center overflow-hidden bg-primary">
-        {/* Geometric Pattern Background */}
-        <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 opacity-[0.03]" style={{
-            backgroundImage: `linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)`,
-            backgroundSize: '60px 60px'
-          }} />
-          <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-primary via-transparent to-transparent" />
-        </div>
+      <section className="relative min-h-screen flex items-center overflow-hidden">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${heroBackground})` }}
+        />
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 z-0 bg-black/50" />
 
         <div className="relative z-10 w-full px-8 md:px-16 lg:px-24">
           <motion.div 
@@ -36,17 +36,17 @@ export default function Home() {
             className="space-y-8"
           >
             <div className="flex items-center gap-3">
-              <div className="w-16 h-[2px] bg-primary-foreground/40" />
-              <span className="text-primary-foreground/60 text-sm font-medium tracking-[0.2em] uppercase">
+              <div className="w-16 h-[2px] bg-white/40" />
+              <span className="text-white/60 text-sm font-medium tracking-[0.2em] uppercase">
                 Grupo Empresarial
               </span>
             </div>
             
-            <h1 className="text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-display font-bold text-primary-foreground leading-[1.05] tracking-tight">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-display font-bold text-white leading-[1.05] tracking-tight">
               Grupo Rabal Pérez
             </h1>
             
-            <p className="text-lg md:text-xl text-primary-foreground/70 max-w-3xl leading-relaxed">
+            <p className="text-lg md:text-xl text-white/80 max-w-3xl leading-relaxed">
               Proyectos tecnológicos, creativos y sociales orientados al futuro. Un ecosistema de empresas que impulsa la innovación en automatización, digitalización y creatividad.
             </p>
 
@@ -64,7 +64,7 @@ export default function Home() {
               <Button 
                 size="lg" 
                 variant="outline"
-                className="text-base px-8 py-6 border-primary-foreground/20 text-primary-foreground bg-transparent"
+                className="text-base px-8 py-6 border-white/30 text-white bg-white/10 backdrop-blur-sm hover:bg-white/20"
                 onClick={() => scrollToSection('group')}
                 data-testid="button-about-group"
               >
@@ -72,12 +72,12 @@ export default function Home() {
               </Button>
             </div>
 
-            <div className="flex flex-wrap items-center gap-8 pt-8 text-primary-foreground/50 text-sm">
+            <div className="flex flex-wrap items-center gap-8 pt-8 text-white/60 text-sm">
               <div className="flex items-center gap-2">
-                <span className="text-3xl font-display font-bold text-primary-foreground">5</span>
+                <span className="text-3xl font-display font-bold text-white">5</span>
                 <span>Empresas activas</span>
               </div>
-              <div className="w-px h-8 bg-primary-foreground/20" />
+              <div className="w-px h-8 bg-white/20" />
               <div>Automatización · Digitalización · Creatividad</div>
             </div>
           </motion.div>
@@ -88,7 +88,7 @@ export default function Home() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2 }}
-          className="absolute bottom-8 left-8 md:left-16 lg:left-24 flex items-center gap-3 text-primary-foreground/40"
+          className="absolute bottom-8 left-8 md:left-16 lg:left-24 flex items-center gap-3 text-white/50"
         >
           <motion.div
             animate={{ y: [0, 8, 0] }}
