@@ -17,100 +17,70 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-background selection:bg-primary/10 selection:text-primary">
-      {/* 1. HERO SECTION - Full screen dark hero */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-primary">
+      {/* 1. HERO SECTION - Full width horizontal layout */}
+      <section className="relative min-h-screen flex items-center overflow-hidden bg-primary">
         {/* Geometric Pattern Background */}
         <div className="absolute inset-0 z-0">
-          {/* Grid pattern */}
           <div className="absolute inset-0 opacity-[0.03]" style={{
             backgroundImage: `linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)`,
             backgroundSize: '60px 60px'
           }} />
-          
-          {/* Diagonal lines accent */}
-          <div className="absolute top-0 left-0 w-full h-full opacity-[0.04]" style={{
-            backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 80px, rgba(255,255,255,0.1) 80px, rgba(255,255,255,0.1) 81px)`
-          }} />
-          
-          {/* Gradient overlay */}
           <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-primary via-transparent to-transparent" />
-          
-          {/* Accent glow */}
-          <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-accent/20 rounded-full blur-[120px]" />
-          <div className="absolute bottom-1/4 left-1/4 w-72 h-72 bg-accent/10 rounded-full blur-[100px]" />
         </div>
 
-        <div className="relative z-10 w-full max-w-6xl mx-auto px-6 md:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            {/* Left content */}
-            <motion.div 
-              initial={{ opacity: 0, x: -40 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
-              className="lg:col-span-7 space-y-8"
-            >
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-[2px] bg-accent" />
-                <span className="text-accent text-sm font-medium tracking-[0.2em] uppercase">
-                  Grupo Empresarial
-                </span>
-              </div>
-              
-              <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-display font-bold text-primary-foreground leading-[1.05] tracking-tight">
-                Grupo<br />
-                <span className="text-accent">Rabal</span> Pérez
-              </h1>
-              
-              <p className="text-lg md:text-xl text-primary-foreground/70 max-w-xl leading-relaxed">
-                Proyectos tecnológicos, creativos y sociales orientados al futuro. Un ecosistema de empresas que impulsa la innovación.
-              </p>
+        <div className="relative z-10 w-full px-8 md:px-16 lg:px-24">
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="space-y-8"
+          >
+            <div className="flex items-center gap-3">
+              <div className="w-16 h-[2px] bg-primary-foreground/40" />
+              <span className="text-primary-foreground/60 text-sm font-medium tracking-[0.2em] uppercase">
+                Grupo Empresarial
+              </span>
+            </div>
+            
+            <h1 className="text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-display font-bold text-primary-foreground leading-[1.05] tracking-tight">
+              Grupo Rabal Pérez
+            </h1>
+            
+            <p className="text-lg md:text-xl text-primary-foreground/70 max-w-3xl leading-relaxed">
+              Proyectos tecnológicos, creativos y sociales orientados al futuro. Un ecosistema de empresas que impulsa la innovación en automatización, digitalización y creatividad.
+            </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <Button 
-                  size="lg" 
-                  variant="secondary"
-                  className="text-base px-8 py-6 font-semibold"
-                  onClick={() => scrollToSection('companies')}
-                  data-testid="button-explore-companies"
-                >
-                  Explorar empresas
-                  <ArrowDown className="ml-2 w-5 h-5" />
-                </Button>
-                <Button 
-                  size="lg" 
-                  variant="outline"
-                  className="text-base px-8 py-6 border-primary-foreground/20 text-primary-foreground bg-transparent"
-                  onClick={() => scrollToSection('group')}
-                  data-testid="button-about-group"
-                >
-                  Sobre el grupo
-                </Button>
-              </div>
-            </motion.div>
+            <div className="flex flex-wrap gap-4 pt-4">
+              <Button 
+                size="lg" 
+                variant="secondary"
+                className="text-base px-8 py-6 font-semibold"
+                onClick={() => scrollToSection('companies')}
+                data-testid="button-explore-companies"
+              >
+                Explorar empresas
+                <ArrowDown className="ml-2 w-5 h-5" />
+              </Button>
+              <Button 
+                size="lg" 
+                variant="outline"
+                className="text-base px-8 py-6 border-primary-foreground/20 text-primary-foreground bg-transparent"
+                onClick={() => scrollToSection('group')}
+                data-testid="button-about-group"
+              >
+                Sobre el grupo
+              </Button>
+            </div>
 
-            {/* Right - Stats/Numbers */}
-            <motion.div 
-              initial={{ opacity: 0, x: 40 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-              className="lg:col-span-5 hidden lg:block"
-            >
-              <div className="grid grid-cols-2 gap-6">
-                <div className="bg-primary-foreground/5 backdrop-blur-sm border border-primary-foreground/10 rounded-2xl p-6 space-y-2">
-                  <div className="text-5xl font-display font-bold text-accent">5</div>
-                  <div className="text-primary-foreground/60 text-sm">Empresas activas</div>
-                </div>
-                <div className="bg-primary-foreground/5 backdrop-blur-sm border border-primary-foreground/10 rounded-2xl p-6 space-y-2">
-                  <div className="text-5xl font-display font-bold text-primary-foreground">+</div>
-                  <div className="text-primary-foreground/60 text-sm">Proyectos en desarrollo</div>
-                </div>
-                <div className="bg-primary-foreground/5 backdrop-blur-sm border border-primary-foreground/10 rounded-2xl p-6 space-y-2 col-span-2">
-                  <div className="text-2xl font-display font-semibold text-primary-foreground">Automatización · Digitalización · Creatividad</div>
-                  <div className="text-primary-foreground/60 text-sm">Sectores de especialización</div>
-                </div>
+            <div className="flex flex-wrap items-center gap-8 pt-8 text-primary-foreground/50 text-sm">
+              <div className="flex items-center gap-2">
+                <span className="text-3xl font-display font-bold text-primary-foreground">5</span>
+                <span>Empresas activas</span>
               </div>
-            </motion.div>
-          </div>
+              <div className="w-px h-8 bg-primary-foreground/20" />
+              <div>Automatización · Digitalización · Creatividad</div>
+            </div>
+          </motion.div>
         </div>
 
         {/* Scroll indicator */}
@@ -118,15 +88,15 @@ export default function Home() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-primary-foreground/40"
+          className="absolute bottom-8 left-8 md:left-16 lg:left-24 flex items-center gap-3 text-primary-foreground/40"
         >
-          <span className="text-xs tracking-widest uppercase">Scroll</span>
           <motion.div
             animate={{ y: [0, 8, 0] }}
             transition={{ duration: 1.5, repeat: Infinity }}
           >
             <ArrowDown className="w-5 h-5" />
           </motion.div>
+          <span className="text-xs tracking-widest uppercase">Scroll</span>
         </motion.div>
       </section>
 
@@ -141,7 +111,7 @@ export default function Home() {
               className="space-y-6"
             >
               <h2 className="text-4xl md:text-5xl font-display font-bold text-primary">El Grupo</h2>
-              <div className="w-20 h-1 bg-accent rounded-full" />
+              <div className="w-20 h-1 bg-primary/30 rounded-full" />
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Grupo Rabal Pérez es la matriz de un ecosistema diverso. Todas las creaciones pertenecen a Luis Rabal Pérez, agrupando tanto empresas activas como proyectos experimentales en desarrollo.
               </p>
@@ -236,7 +206,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                     className="text-sm text-primary-foreground/70 hover:text-white hover:underline transition-colors flex items-center group"
                   >
-                    <span className="w-1.5 h-1.5 bg-accent rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <span className="w-1.5 h-1.5 bg-primary-foreground rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity" />
                     {company.name}
                   </a>
                 </li>
