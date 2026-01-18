@@ -68,7 +68,7 @@ export default function Home() {
                 onClick={() => scrollToSection('group')}
                 data-testid="button-about-group"
               >
-                Sobre el grupo
+                Luis Rabal Pérez
               </Button>
             </div>
 
@@ -113,13 +113,13 @@ export default function Home() {
               viewport={{ once: true }}
               className="space-y-6"
             >
-              <h2 className="text-4xl md:text-5xl font-display font-bold text-primary">El Grupo</h2>
+              <h2 className="text-4xl md:text-5xl font-display font-bold text-primary">Luis Rabal Pérez</h2>
               <div className="w-20 h-1 bg-primary/30 rounded-full" />
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Grupo Rabal Pérez es la matriz de un ecosistema diverso. Todas las creaciones pertenecen a Luis Rabal Pérez, agrupando tanto empresas activas como proyectos experimentales en desarrollo.
+                Mi nombre es Luis Rabal Pérez, diseñador de producto murciano y fundador del grupo. Cuando apareció ChatGPT, como muchos otros, quedé impresionado por el potencial de la inteligencia artificial. Me di cuenta de que la IA podía ser una gran aliada para las empresas de mi entorno, en su mayoría pymes que no podían asumir los costes de las herramientas digitales habituales.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Cada empresa opera de forma independiente con su propia web, producto y audiencia, pero todas comparten una visión común de innovación y excelencia.
+                Por eso decidí no crear una única empresa, sino varias, cada una enfocada en resolver problemas concretos y acercar la tecnología a quienes realmente la necesitan.
               </p>
             </motion.div>
 
