@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowDown, Building2, Globe, Layers } from "lucide-react";
 import { motion } from "framer-motion";
 import heroBackground from "@assets/image_1768755699510.png";
+import founderImage from "@assets/generated_images/young_spanish_professional_portrait.png";
 
 export default function Home() {
   const { data: companies, isLoading } = useCompanies();
@@ -106,21 +107,36 @@ export default function Home() {
       {/* 2. THE GROUP SECTION */}
       <section id="group" className="py-24 px-4 bg-secondary/30">
         <div className="max-w-7xl mx-auto">
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="max-w-3xl space-y-6"
-          >
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-primary">Luis Rabal Pérez</h2>
-            <div className="w-20 h-1 bg-primary/30 rounded-full" />
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Mi nombre es Luis Rabal Pérez, diseñador de producto murciano y fundador del grupo. Cuando apareció ChatGPT, como muchos otros, quedé impresionado por el potencial de la inteligencia artificial. Me di cuenta de que la IA podía ser una gran aliada para las empresas de mi entorno, en su mayoría pymes que no podían asumir los costes de las herramientas digitales habituales.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Por eso decidí no crear una única empresa, sino varias, cada una enfocada en resolver problemas concretos y acercar la tecnología a quienes realmente la necesitan.
-            </p>
-          </motion.div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <motion.div 
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="space-y-6"
+            >
+              <h2 className="text-4xl md:text-5xl font-display font-bold text-primary">Luis Rabal Pérez</h2>
+              <div className="w-20 h-1 bg-primary/30 rounded-full" />
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Mi nombre es Luis Rabal Pérez, diseñador de producto murciano y fundador del grupo. Cuando apareció ChatGPT, como muchos otros, quedé impresionado por el potencial de la inteligencia artificial. Me di cuenta de que la IA podía ser una gran aliada para las empresas de mi entorno, en su mayoría pymes que no podían asumir los costes de las herramientas digitales habituales.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Por eso decidí no crear una única empresa, sino varias, cada una enfocada en resolver problemas concretos y acercar la tecnología a quienes realmente la necesitan.
+              </p>
+            </motion.div>
+
+            <motion.div 
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="flex justify-center lg:justify-end"
+            >
+              <img 
+                src={founderImage} 
+                alt="Luis Rabal Pérez" 
+                className="rounded-2xl shadow-lg max-w-sm w-full object-cover"
+              />
+            </motion.div>
+          </div>
         </div>
       </section>
 
