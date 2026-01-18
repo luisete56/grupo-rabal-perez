@@ -47,7 +47,7 @@ export default function Home() {
             </h1>
             
             <p className="text-lg md:text-xl text-white/80 max-w-3xl leading-relaxed">
-              Proyectos tecnológicos, creativos y sociales orientados al futuro. Un ecosistema de empresas que impulsa la innovación en automatización, digitalización y creatividad.
+              Soy una persona del Mediterráneo que, con la ayuda de la inteligencia artificial, ayudo a crear servicios más baratos y accesibles.
             </p>
 
             <div className="flex flex-wrap gap-4 pt-4">
@@ -81,9 +81,6 @@ export default function Home() {
                     <span className="text-sm">activas</span>
                   </div>
                 </div>
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl px-6 py-4">
-                <span className="text-white/80 text-sm">Automatización · Digitalización · Creatividad</span>
               </div>
             </div>
           </motion.div>
