@@ -58,7 +58,6 @@ server/public/
 
 # Vite
 vite.config.ts.*
-*.local
 
 # Database
 *.sqlite
@@ -71,7 +70,4 @@ drizzle/*.sql
 *.zip
 
 # Misc
-.replit
-replit.nix
 .upm/
-.config/
