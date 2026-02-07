@@ -4,7 +4,9 @@ const companies = [
   "Palmeras",
   "Gaviotas",
   "LMS Automático",
+  "Bro",
   "Calma",
+  "Asistente de Moda",
   "Ultimate Horror Survival",
 ];
 
@@ -32,7 +34,7 @@ export function StructureDiagram() {
         <div className="hidden md:block absolute top-0 left-1/2 -translate-x-1/2 w-px h-12 bg-gradient-to-b from-primary/50 to-border" />
         <div className="hidden md:block absolute top-12 left-[10%] right-[10%] h-px bg-border" />
         
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mt-12 md:mt-0 relative">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 md:mt-0 relative">
            {companies.map((name, index) => (
              <motion.div
                key={name}

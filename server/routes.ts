@@ -61,17 +61,42 @@ async function seedDatabase() {
       ctaText: "Visitar LMS Automático"
     },
     {
-      name: "CALMA",
-      sector: "Creatividad / Audiovisual / Videojuegos",
-      description: "Calma es una productora creativa dedicada a la creación de contenido audiovisual y experiencias interactivas.",
+      name: "BRO",
+      sector: "Creatividad / Videojuegos",
+      description: "BRO es una productora de videojuegos dedicada al desarrollo de experiencias interactivas y títulos de entretenimiento digital.",
       services: [
-        "Cortometrajes",
-        "Proyectos audiovisuales",
-        "Videojuegos",
-        "Encargos personalizados y proyectos culturales"
+        "Desarrollo de videojuegos",
+        "Experiencias interactivas",
+        "Proyectos de entretenimiento digital",
+        "Encargos personalizados"
       ],
       url: "https://calmaproducciones.eu/",
+      ctaText: "Visitar BRO"
+    },
+    {
+      name: "CALMA",
+      sector: "Cine español / Contenido con IA",
+      description: "Calma es una productora de cine español cuyos contenidos están creados con IA, no solo de entretenimiento sino también informativos.",
+      services: [
+        "Contenido audiovisual con IA",
+        "Entretenimiento e informativos",
+        "Cine español",
+        "Proyectos culturales y documentales"
+      ],
+      url: "https://calma-antes.replit.app",
       ctaText: "Visitar Calma"
+    },
+    {
+      name: "ASISTENTE DE MODA",
+      sector: "Moda / IA",
+      description: "Asistente de Moda Inteligente: herramienta que combina tecnología e inteligencia artificial para asesoramiento y recomendaciones en moda.",
+      services: [
+        "Recomendaciones personalizadas",
+        "Asesoramiento de estilo con IA",
+        "Experiencias interactivas de moda"
+      ],
+      url: "https://mediumaquamarine-goldfinch-135963.hostingersite.com/",
+      ctaText: "Visitar Asistente de Moda"
     },
     {
       name: "ULTIMATE HORROR SURVIVAL",
