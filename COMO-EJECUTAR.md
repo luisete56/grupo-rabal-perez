@@ -59,6 +59,34 @@ PARA REDESPLEGAR:
 3. Hostinger detectará el push y redesplegará automáticamente
 
 ============================================
+  SOLUCIÓN DE PROBLEMAS (Error 503)
+============================================
+
+Si al desplegar en Hostinger aparece "503 Service Unavailable":
+
+PROBLEMA 1: Carpeta dist/ ignorada por Git
+------------------------------------------
+- La carpeta dist/ contenía los archivos compilados necesarios
+- Estaba en .gitignore, por lo que no se subía a GitHub
+- SOLUCIÓN: Se quitó "dist/" del .gitignore para que los 
+  archivos compilados se suban al repositorio
+
+PROBLEMA 2: Dependencia de base de datos PostgreSQL
+---------------------------------------------------
+- El servidor original requería DATABASE_URL (PostgreSQL)
+- Sin esta variable de entorno, el servidor fallaba al iniciar
+- SOLUCIÓN: Se modificó server/storage.ts para usar 
+  almacenamiento en memoria en lugar de base de datos
+- Ahora la aplicación funciona sin necesidad de configurar
+  una base de datos externa
+
+IMPORTANTE:
+-----------
+- Después de hacer cambios, siempre ejecutar: npx tsx script/build.ts
+- Luego hacer commit y push de la carpeta dist/ actualizada
+- En Hostinger, hacer "Redeploy" para aplicar los cambios
+
+============================================
   REQUISITOS
 ============================================
 - Node.js 18+ instalado (local)
