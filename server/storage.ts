@@ -1,25 +1,32 @@
-import { companies, type Company, type InsertCompany } from "@shared/schema";
-import { db } from "./db";
-import { eq } from "drizzle-orm";
+import { type Company, type InsertCompany } from "@shared/schema";
 
 export interface IStorage {
   getCompanies(): Promise<Company[]>;
   createCompany(company: InsertCompany): Promise<Company>;
 }
 
-export class DatabaseStorage implements IStorage {
+// Almacenamiento en memoria - no requiere base de datos
+export class MemoryStorage implements IStorage {
+  private companies: Company[] = [];
+  private nextId = 1;
+
   async getCompanies(): Promise<Company[]> {
-    // Order by ID to ensure consistent order (Palmeras, Gaviotas, etc.)
-    return await db.select().from(companies).orderBy(companies.id);
+    return this.companies;
   }
 
   async createCompany(insertCompany: InsertCompany): Promise<Company> {
-    const [company] = await db
-      .insert(companies)
-      .values(insertCompany)
-      .returning();
+    const company: Company = {
+      id: this.nextId++,
+      name: insertCompany.name,
+      sector: insertCompany.sector,
+      description: insertCompany.description,
+      services: insertCompany.services,
+      url: insertCompany.url,
+      ctaText: insertCompany.ctaText || "Visitar",
+    };
+    this.companies.push(company);
     return company;
   }
 }
 
-export const storage = new DatabaseStorage();
+export const storage = new MemoryStorage();
