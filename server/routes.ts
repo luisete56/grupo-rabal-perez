@@ -33,7 +33,7 @@ async function seedDatabase() {
         "Digitalización de catálogos y stock",
         "Integraciones tecnológicas avanzadas"
       ],
-      url: "https://palmeras-tienda-online--luigirabal.replit.app/",
+      url: "https://palmeras-express.replit.app",
       ctaText: "Visitar Palmeras"
     },
     {
@@ -45,7 +45,7 @@ async function seedDatabase() {
         "Automatización de procesos",
         "Integraciones tecnológicas avanzadas"
       ],
-      url: "https://firebrick-seahorse-545517.hostingersite.com/",
+      url: "https://web-en-espanol.replit.app",
       ctaText: "Visitar Gaviotas"
     },
     {
