@@ -75,7 +75,7 @@ export default function Home() {
             <div className="flex flex-wrap items-center gap-6 pt-8">
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl px-6 py-4">
                 <div className="flex items-center gap-4">
-                  <span className="text-5xl md:text-6xl font-display font-bold text-white">6</span>
+                  <span className="text-5xl md:text-6xl font-display font-bold text-white">7</span>
                   <div className="text-white/80">
                     <span className="text-lg font-semibold block">Empresas</span>
                     <span className="text-sm">activas</span>
