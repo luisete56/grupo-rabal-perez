@@ -83,7 +83,7 @@ async function seedDatabase() {
         "Cine español",
         "Proyectos culturales y documentales"
       ],
-      url: "https://calma-antes.replit.app",
+      url: "https://bisque-grouse-156049.hostingersite.com/",
       ctaText: "Visitar Calma"
     },
     {
